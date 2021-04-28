@@ -27,7 +27,7 @@ body{
 .prev{
   cursor: pointer;
   position: absolute;
-  left: 84%;
+  left: 56%;
   top: 80%;
   width: auto;
   margin-top: -22px;
@@ -43,6 +43,7 @@ body{
   cursor: pointer;
   position: absolute;
   top: 80%;
+  left: 99%
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -65,7 +66,6 @@ body{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   /* background-color: rgba(0,0,0,0.8); */
-
   transform: translate(2px, -2%);;
 }
 
@@ -121,4 +121,38 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (min-width:443px){
+  .prev{
+    cursor: pointer;
+    position: absolute;
+    left: 95%;
+    top: 80%;
+     width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  }
+  .next{
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    left: 97%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+    
+  }
 }

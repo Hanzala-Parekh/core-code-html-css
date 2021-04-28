@@ -1,11 +1,10 @@
-body{
+body {
   margin: 0%;
   padding: 0%;
 }
 
-
 * {
-    box-sizing:border-box
+  /* box-sizing:border-box; */
 }
 
 /* Slideshow container */
@@ -13,10 +12,10 @@ body{
   position: relative;
   margin: auto;
 }
-.myclass{
-    height: 60vh;
-    width: 100vw;
-  }
+.myclass {
+  height: 80vh;
+  width: 100vw;
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -27,7 +26,7 @@ body{
 .prev{
   cursor: pointer;
   position: absolute;
-  left: 56%;
+  left: 55%;
   top: 80%;
   width: auto;
   margin-top: -22px;
@@ -43,7 +42,7 @@ body{
   cursor: pointer;
   position: absolute;
   top: 80%;
-  left: 99%
+  left: 90%
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -56,17 +55,17 @@ body{
   
 }
 
-
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  /* right: 0; */
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   /* background-color: rgba(0,0,0,0.8); */
-  transform: translate(2px, -2%);;
+  transform: translate(2px, -2%);
 }
 
 /* Caption text */
@@ -101,7 +100,8 @@ body{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -114,22 +114,30 @@ body{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media screen and (min-width:443px){
-  .prev{
+@media screen and (min-width: 756px) {
+  .prev {
     cursor: pointer;
     position: absolute;
-    left: 95%;
+    left: 85%;
     top: 80%;
-     width: auto;
+    width: auto;
     margin-top: -22px;
     padding: 16px;
     color: white;
@@ -137,14 +145,14 @@ body{
     font-size: 50px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none; 
+    user-select: none;
   }
-  .next{
+  .next {
     cursor: pointer;
     position: absolute;
     top: 80%;
     width: auto;
-    left: 97%;
+    left: 89%;
     margin-top: -22px;
     padding: 16px;
     color: white;
@@ -152,7 +160,6 @@ body{
     font-size: 50px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none; 
-    
+    user-select: none;
   }
 }
